@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+  }
+
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+body{
+    background-color: #F5F6F7;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.main{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*Left Box*/
+.card-left, .card-right, .work-box, .education, .language {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    font-family: arial;
+    background: #fff;
+}
+.left-box {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.card-title {
+    color: grey;
+    font-size: 18px;
+}
+
+.image-container{
+    background: white;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.image-container > img {
+    vertical-align: middle;
+}
+.image-text{
+    text-align: center;
+}
+.image-text > h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.card-badge {
+    color: #ffffff;
+    position: relative;
+    background-color: #616161;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+}
+.card-badge:hover {
+    font-size: 1rem;
+    background-color: #2196f3;
+}
+.card-social {
+    margin-top: 1.3rem;
+}
+.social-link {
+    color: #44566C;
+    display: inline-block;
+    margin-left: 0.8125rem;
+    text-decoration: none;
+}
+.social-link:first-child {
+    margin-left: 0;
+}
+
+.card-bottom {
+    background: #F5F8F9;
+    padding: 0.5em 16px;
+}
+.card-bottom a {
+    text-decoration: none;
+    color: black;
+}
+.card-bottom .fa {
+    margin-right: .5rem;
+}
+
+.right-box, .left-box{
+    padding: 0 8px;
+}
+
+.cv-button {
+    background-color: #f7cf5f;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 0.5rem 1rem rgb(48 76 253 / 15%), 0 0.125rem 0.25rem rgb(48 76 253 / 15%);
+    color: #3e3e3e;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: inherit;
+    padding: 0.9375rem 2rem 0.875rem;
+    position: relative;
+    transition: .4s ease-in-out;
+    white-space: nowrap;
+}
+
+/*Right box*/
+.about, .work-exp, .education-box, .language-box{
+    padding: 0.01em 16px;
+}
+.right-box {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.about-text, .language-title{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: xx-large;
+    font-weight: 700;
+    color: #6d6d6d;
+}
+
+/* h2.about-text>.fuser {
+    color: #2196f3;
+} */
+
+.fuser {
+    width: 1.28571429em;
+    text-align: center;
+    margin-right: 16px;
+    font-size: xx-large;
+}
+
+/*Work Experience*/
+.work-box, .education, .language{
+    margin-top: 1rem;
+}
+h5.company-work {
+    font-size: 1.2rem;
+    opacity: 0.60;
+}
+h6.date {
+    font-size: 1rem;
+}
+.fdate {
+    margin-right: 15px;
+}
+span.current {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #2196f3;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/*Skills*/
+p.skills {
+    font-size: 1.2rem;
+    opacity: 0.60;
+}
+.skills-list {
+    font-size: 12px;
+}
+.skills-percent {
+    text-align: center;
+    color: #fff;
+    background-color: #2196f3;
+    border-radius: 16px;
+}
+.skills-list{
+    background-color: #bdbdbd;
+    border-radius: 16px;
+}
+h5.language-text {
+    font-size: 1.2rem;
+    opacity: 0.60;
+}
+.language-list {
+    display: grid;
+}
+
+/*social icon*/
+i.fa.fa-facebook {
+    color: #3a5794;
+}
+i.fa.fa-instagram {
+    color: #bc2a8d;
+}
+i.fa.fa-youtube {
+    color: #c93226;
+}
+.card-social .fa {
+    font-size: 18px!important;
+}
+
+/*Footer*/
+.footer{
+    margin-top: 1rem;
+    background: #2196f3;
+    padding: 1rem;
+}
+.footer-group {
+    text-align: center;
+}
+.footer-group>p {
+    color: white;
+}
+.footer-social {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.footer-social i.fa {
+    color: white;
+}
+button.cv-button > a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+
+@media (max-width: 600px){
+    .container{
+        display: block;
+    }
+}
