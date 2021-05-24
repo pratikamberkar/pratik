@@ -1,0 +1,3 @@
+User-agent: * 
+Disallow:
+Sitemap: https://pratikamberkar.github.io/pratik/sitemap.xml
